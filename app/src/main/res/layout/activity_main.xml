@@ -9,16 +9,18 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_width="409dp"
+        android:layout_height="220dp"
         android:contentDescription="@string/todo"
         android:scaleType="centerCrop"
         android:textAlignment="viewStart"
         app:barrierAllowsGoneWidgets="false"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bookgreen"
         tools:ignore="ContentDescription" />
 
@@ -28,34 +30,34 @@
         android:layout_height="72dp"
         android:layout_marginBottom="248dp"
         android:background="@drawable/sss"
-        android:backgroundTint="#87C366"
         android:text="@string/login_for_admin"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.866" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="522dp"
-        android:layout_marginTop="150dp"
         android:background="@drawable/rounded_corner_view"
-
         android:fontFamily="@font/ubuntu_medium"
         android:gravity="center_horizontal|top"
-        android:text="@string/lms"
-        android:textColor="#050404"
-        android:textSize="60sp"
+        android:includeFontPadding="true"
+        android:paddingTop="20dp"
+        android:text="Library Management "
+        android:textColor="#DC471805"
+        android:textColorHighlight="#000000"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         tools:ignore="TextContrastCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -64,18 +66,18 @@
         android:layout_height="72dp"
         android:layout_marginBottom="100dp"
         android:background="@drawable/sss"
-        android:backgroundTint="#87C366"
         android:elevation="10dp"
         android:fontFamily="@font/ubuntu_medium"
         android:shadowDx="10"
         android:text="@string/login_for_user"
-        android:textColor="@android:color/black"
+        android:textColor="@color/white"
         android:textColorHighlight="#511E1E"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintVertical_bias="0.847" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
